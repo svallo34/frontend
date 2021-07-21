@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+/*Header*/
+
+.nav-top {
+  font-family: "Roboto", sans-serif;
+  background-color: #1cd1b0;
+  padding: 8px;
+}
+.nav-principal {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 30px;
+  background-color: #00669f;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+/*Main*/
+section {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 8px;
+}
+.card {
+  display: inline-block;
+  border-radius: 16px 16px 0px 0px;
+  width: 300px;
+  height: 529px;
+  left: 32px;
+  background: #f3f3f3;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 200px 30px;
+}
+.card-img {
+  position: absolute;
+  width: 300px;
+  height: 193px;
+}
+
+.card-img-batman {
+  background-image: url(../img/fondo_batman.png);
+}
+
+.card-text {
+  position: relative;
+  top: 245px;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  padding: 20px;
+}
+
+.card-img-harley {
+  background-image: url(../img/fondo_harley.png);
+}
+
+.fa-heart {
+  color: #cc2424;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 25px;
+}
+
+.avatar {
+  position: absolute;
+  top: 130px;
+  left: 93px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-button {
+  position: absolute;
+  bottom: 40px;
+  background-color: #00669f;
+  color: white;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  margin-left: 100px;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.25);
+}
+
+/*Footer*/
+footer {
+  color: white;
+  background-color: #00669f;
+  padding: 15px;
+}
