@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  
+ 
+  }
+  ul{
+    list-style: none;
+    
+  }
+  .texto-verde{
+    color:#39B24A;
+  }
+  .texto-rojo{
+    color: #FC200C;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #E5E5E5;
+}
+
+h2{
+  color: white
+}
+/* Header */
+
+.header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    height: 100px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin:20px;
+}
+
+h1{
+  margin-left: 15px;
+  color: white;
+}
+
+.header-nav{
+  display:flex;
+  color:white;
+  text-decoration: none;
+  align-content: flex-end;
+}
+
+.boton-nav{
+  color:white;
+  text-decoration: none;
+  font-weight: 400;
+}
+nav>ul{
+  display: flex;
+}
+nav > ul > li{
+  display: inline-block;
+  align-items: flex-end;
+  padding: 20px;
+ 
+}
+/* Main */
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.main-container-card {
+  height: 350px;
+  Width : 491px;
+  border-radius: 5px;
+  margin: 2.5px;
+}
+.titulo-podio-pizza {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  margin-top: 17px;
+}
+
+.delivery{
+  background-image: url(../img/delivery.jpg);
+  padding: 15px;
+}
+
+.podio-pizza{
+  color: #222222;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lista-pizzas{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  margin-bottom:65px
+}
+.lista-pizzas div{
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-titulo{
+  margin-bottom: 12px;
+}
+.lista{
+  line-height: 30px;
+}
+
+/* Footer */
+.footer-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  height: 150px;
+}
+
+.logo-footer{
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+footer div>ul{
+  display: flex;
+  flex-direction: column;
+}
+footer div > ul > li{
+  padding: 5px;
+  border:5px;
+}
