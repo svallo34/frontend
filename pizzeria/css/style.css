@@ -5,14 +5,17 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-  
- 
   }
+
+ /* html {
+     
+      font-size: 62.5%;
+  }  */
+  
   ul{
     list-style: none;
-    
+    font-size: 16px;
+    font-weight: 400;
   }
   .texto-verde{
     color:#39B24A;
@@ -22,7 +25,9 @@
   }
 
   body {
-    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    /*height: 100vh;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,6 +37,8 @@
 h2{
   color: white
 }
+
+
 /* Header */
 
 .header-container{
@@ -40,6 +47,8 @@ h2{
     align-items: center;
     background-color: #222222;
     height: 100px;
+    z-index: 999;
+    position: relative;
 }
 
 .logo{
@@ -54,7 +63,6 @@ h1{
 }
 
 .header-nav{
-  display:flex;
   color:white;
   text-decoration: none;
   align-content: flex-end;
@@ -74,6 +82,21 @@ nav > ul > li{
   padding: 20px;
  
 }
+nav ul li ::before{
+  content: "\f818";
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-right: 5px;
+}
+a:hover{
+  color:  #FC200C;
+  }
+
+  .hamburguesa{
+    display: none;
+  }
+
 /* Main */
 .main-container{
   display: flex;
@@ -88,6 +111,13 @@ nav > ul > li{
   border-radius: 5px;
   margin: 2.5px;
 }
+h2::first-letter{
+  font-size: 2rem;
+}
+h2 span::first-letter{
+  font-size: 2rem;
+}
+
 .titulo-podio-pizza {
   display: flex; 
   flex-direction: row; 
@@ -131,7 +161,12 @@ nav > ul > li{
   justify-content: space-between;
   align-items: center;
   background-color: #222222;
-  height: 150px;
+  
+  position:relative;
+/*   position:fixed;
+  left:0px;
+  bottom:0px */
+
 }
 
 .logo-footer{
@@ -147,4 +182,47 @@ footer div>ul{
 footer div > ul > li{
   padding: 5px;
   border:5px;
+}
+
+/*responsive*/
+@media screen and (max-width: 768px) {
+  .main-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  header nav {
+    display: none;
+}
+  .hamburguesa {
+    display: unset;
+    color: white;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.delivery {
+  margin: 1.5rem 0 1rem 0;
+}
+.podio-pizza {
+  margin:1rem 0 1.5rem 0;
+}
+}
+@media screen and (max-width: 480px) {
+  .main-container{
+    flex-direction: column;
+  }
+  .delivery .podio-pizza{
+    width:100%;
+  }
+  .lista-pizzas{
+    justify-content: space-evenly;
+  }
+  .header-nav{
+    visibility: hidden;
+  }
+  
+footer{
+  flex-direction: column;
+  }
+  
 }
